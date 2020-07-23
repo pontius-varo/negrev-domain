@@ -1,0 +1,15 @@
+#counter-line{
+  background-color: whitesmoke;
+  border-radius: 1px;
+  width: 300px;
+  height: 30px;
+  font-weight: bold;
+  font-family: times, serif;
+
+}
+#counter{
+  color: blue;
+  background-color: whitesmoke;
+  padding: 4px 6px;
+  border-radius: 5px;
+}

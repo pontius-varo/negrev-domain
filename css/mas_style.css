@@ -1,0 +1,110 @@
+body{
+  background-image: url("/home/poncio/prog_dirs/htmlprojects/personal_website/imgs/backgrounds/testII.jpg");*/
+  /*background-color: #377d91;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+  list-style: none;
+  display:inline;
+  text-align: center;
+}
+nav li{
+  position:relative;
+  display: inline-block;
+  list-style-type: none;
+}
+nav li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color:#f9ffe6;
+}
+#main{
+  border: 1px solid;
+  background-color: #f9ffe6;
+  border-color: lightgrey;
+  color: #333333;
+  padding: 0px 20px 20px 20px;
+  width: 60%;
+  height: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: Garamond, sans-serif;
+}
+#banners {
+  width: 60%;
+  margin-top: .45%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#about-main, #contact-main, #blog-main{
+  border: 1px solid;
+  background-color: #f9ffe6;
+  border-color: lightgrey;
+  color: #333333;
+  padding: 0px 20px 20px 20px;
+  width: 60%;
+  height: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 12px;
+  font-family: Garamond, sans-serif;
+}
+#about-text{
+  font-size: 11px;
+  margin-left: 50%;
+}
+#profile{
+  float: left;
+  width: 250px;
+  height: 145px;
+  border: 1px solid blue;
+  margin-left: 10%;
+}
+#lis2{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+marquee{
+  font-weight: bold;
+  font-size: 15px;
+  /* NAME | TIME | ITERATION */
+      animation: blinking 1s infinite;
+}
+@keyframes blinking {
+        0%{
+          color: #ff140c;
+        }
+        25%{
+          color: #ff0fcf
+        }
+        50%{
+          color: #230fff;
+        }
+        75%{
+          color:#1aff01
+        }
+        100%{
+          color: #ffff13;
+}
