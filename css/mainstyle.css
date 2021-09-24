@@ -1,0 +1,167 @@
+html, body{
+  margin: 0;
+  border: 0px;
+}
+
+/*
+body{
+  background-image: url("../imgs/rom1.jpg");
+}
+*/
+.wrapper{
+  display: grid;
+  /* A single row */
+  grid-template-columns: auto;
+  /* Three rows */
+  grid-template-rows: auto auto auto;
+  grid-gap: 1em;
+  overflow: hidden;
+  font-family: 'Anonymous Pro', monospace;
+  padding: 0px 0px 0px 0px;
+}
+
+.header{
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.main{
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.footer{
+  grid-column: 1 / 2;
+  grid-row: 3;
+  background-color: #36728c;
+  color: #fdfefe;
+  bottom: 0;
+}
+
+.altfooter{
+  background-color: #4796b8;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.tinybox{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+}
+/* Navagation Bar */
+.navbar{
+  /* empty ! */
+
+}
+
+ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+  }
+
+li {
+          float: left;
+  }
+
+li a {
+          display: block;
+          color: #111;
+          font-size: 15px;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          text-transform: none;
+          font-weight: 600;
+          letter-spacing: 2px;
+  }
+
+li a:hover {
+          color: white;
+  }
+
+/*Dropbown button stuff*/
+  .dropdown {
+  /* Empty :^) */
+  }
+  .dropdown-menu{
+          display: none;
+          position: absolute;
+          background-color: white;
+          width: 130px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          background-color: white;
+          margin: auto;
+  }
+
+  .dropdown-menu a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+  }
+
+  .dropdown:hover .dropdown-menu {
+          display: block;
+  }
+
+/* OTHER */
+
+#special{
+  font-size: 30px;
+  /*
+  padding-left: 50px;
+  padding-right: 50px;
+  */
+  height: 233px;
+  width: 500px;
+}
+
+.button{
+  border: 0;
+  /*background: #4796b8;*/
+  background-color: #88bbd1;
+  color: #fdfefe;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.button:hover{
+  background-color: #4796b8;
+}
+
+.button:active{
+  background-color: #4796b8;
+  box-shadow: ;
+}
+
+#boxmain{
+  height: 450px;
+  width: 1200px;
+
+  /*
+  background-image: url("../imgs/cordobabackground.jpg");
+  background-repeat: no-repeat;
+  justify-content: center;
+  */
+  overflow: auto;
+}
+
+#imgspecial{
+  background-image: url("../imgs/background2.jpg");
+  z-index: -1;
+  opacity: 0.5;
+}
