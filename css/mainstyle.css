@@ -1,6 +1,7 @@
 html, body{
   margin: 0;
   border: 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 /*
@@ -45,12 +46,21 @@ body{
   display: flex;
   flex-direction: row;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .box2 {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+.box3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
 }
 .tinybox{
   display: flex;
@@ -164,4 +174,83 @@ li a:hover {
   background-image: url("../imgs/background2.jpg");
   z-index: -1;
   opacity: 0.5;
+}
+
+#name{
+  text-decoration: none;
+  color: #88bbd1;
+}
+
+#head{
+  background-color: #63a9c0;
+}
+
+/* Special Box borrowed from x */
+.oldbox{
+  border: 0px solid;
+  /*background-color: #f9ffe6;*/
+  font-size: 16px;
+  border-color: lightgrey;
+  padding: 0px 20px 20px 20px;
+  width: auto;
+  height: auto;
+  margin: 5% 25% 0% 25%;
+}
+
+/* React to smaller screen size! */
+@media all and (max-width: 700px){
+  .box{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Entries */
+
+.entry-title{
+  /*
+  border: 2px solid;
+  */
+  text-align: center;
+  padding: 0px 0px 0px 5px;
+  font-weight: bold;
+  height: 70px;
+  width: auto;
+}
+
+.entry-img{
+  /*border: 2px solid; */
+  height: 260px;
+  width: 260px;
+}
+
+.entry-img > img {
+  height: 260px;
+  width: 260px;
+}
+
+.entry-text{
+  /*
+  border: 2px solid;
+  border-color: black;
+  */
+  font-size: 16px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  height: 120px;
+  width: 260px;
+}
+
+/* footer stuff */
+
+
+.footer-item{
+  height: auto;
+  width: 220px;
+  text-align: center;
+}
+
+.footer-item > a img {
+  height: 25px;
+  width: 25px;
 }
