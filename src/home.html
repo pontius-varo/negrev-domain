@@ -8,12 +8,15 @@
     <!-- Alternative Style -->
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
     <!-- JS -->
-    <script type="text/javascript" src="../js/master.js"></script>
+    <script type="text/javascript" src="../js/test.js" defer></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    <title>Antonio's Realm</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../imgs/tri1.ico" type="image/x-icon">
+    <!-- Title -->
+    <title id="title">Antonio's Realm</title>
   </head>
   <body>
     <div class="wrapper">
@@ -21,7 +24,7 @@
       <div class="header">
         <div class="box" id="head">
           <div class="tinybox" style="margin: left;">
-            <p>Logo</p>
+            <a href="home.html"><img id="logo" src="../imgs/triquetra(1).png"/></a>
           </div>
           <div class="tinybox">
             <div class="navbar">
@@ -36,26 +39,27 @@
       <!-- Main Content -->
       <div class="main">
         <div class="box2">
-          <div class="tinybox">
-            <h2><a href="mailto: zponce@posteo.net" id="name">Antonio_Ponce</a> = dev()</h2>
+          <div class="tinybox" style="padding: 0px 0px 0px 0px;">
+            <h2 id="test"><a href="mailto: zponce@posteo.net" id="name">Antonio_Ponce</a> = dev()</h2>
           </div>
         </div>
-        <div class="box" id="boxmain">
-          <div class="tinybox" id="special">
-            <p><b>“Man is nothing else but what he purposes...he is nothing else but the sum of his actions...”</b>
-            <i style="font-size: 15px; color: #cccdcc;"><b>~ Jean-Paul Sartre</b></i>
-            </p>
+        <div class="box">
+          <div class="tinybox">
+            <div class="maintext">
+              <p><b>“Man is nothing else but what he purposes...he is nothing else but the sum of his actions...”</b></p>
+              <p><i style="font-size: 15px; color: #cccdcc;"><b>~ Jean-Paul Sartre</b></i></p>
+            </div>
           </div>
           <div class="tinybox">
             <button type="button" name="button" class="button"><b>my projects</b></button>
           </div>
         </div>
         </div>
-      <!-- Footer -->
-      <div class="footer">
+      </div>
+      <footer class="footer">
         <div class="box3">
           <div class="footer-item">
-              <p><b>$touch projects.html</b></p>
+              <p><b>$touch home.html</b></p>
             </div>
             <div class="footer-item">
                   <a href="https://whatwg.org/"><img src="../imgs/htmlicon.png"></a>
@@ -66,7 +70,6 @@
                 <p><i>my <b>résumé</b></i></p>
             </div>
           </div>
-      </div>
-      </div>
+      </footer>
   </body>
 </html>

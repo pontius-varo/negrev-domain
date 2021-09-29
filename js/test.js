@@ -1,7 +1,11 @@
-function myfunc(x) {
-        x.classList.toggle("change");
+function changePosition(){
+  if(document.getElementById("title").innerHTML == "Antonio's Realm"){
+    document.getElementsByClassName("footer")[0].style.position = "fixed";
+  }else{
+    console.log('No need');
+    return;
+  }
+  console.log('Changed!');
 }
 
-document.getElementbyId("test").style.fontSize = "35px";
-
-document.getElementbyId("demo").style.display = "none";
+changePosition();

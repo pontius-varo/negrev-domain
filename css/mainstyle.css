@@ -1,4 +1,4 @@
-html, body{
+body{
   margin: 0;
   border: 0px;
   padding: 0px 0px 0px 0px;
@@ -14,11 +14,12 @@ body{
   /* A single row */
   grid-template-columns: auto;
   /* Three rows */
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   grid-gap: 1em;
   overflow: hidden;
   font-family: 'Anonymous Pro', monospace;
   padding: 0px 0px 0px 0px;
+  height: auto;
 }
 
 .header{
@@ -32,15 +33,16 @@ body{
 }
 
 .footer{
+  /*
   grid-column: 1 / 2;
   grid-row: 3;
+  */
+  bottom: 0;
+  margin: 0;
+  width: 100%;
   background-color: #36728c;
   color: #fdfefe;
-  bottom: 0;
-}
-
-.altfooter{
-  background-color: #4796b8;
+  position: sticky;
 }
 .box{
   display: flex;
@@ -61,7 +63,10 @@ body{
   justify-content: space-evenly;
   align-items: center;
   font-size: 16px;
+  background-color:  #36728c;
+  color: #fdfefe;
 }
+
 .tinybox{
   display: flex;
   flex-direction: column;
@@ -132,10 +137,6 @@ li a:hover {
 
 #special{
   font-size: 30px;
-  /*
-  padding-left: 50px;
-  padding-right: 50px;
-  */
   height: 233px;
   width: 500px;
 }
@@ -185,23 +186,48 @@ li a:hover {
   background-color: #63a9c0;
 }
 
-/* Special Box borrowed from x */
+/* Special Box borrowed from old project */
 .oldbox{
   border: 0px solid;
   /*background-color: #f9ffe6;*/
   font-size: 16px;
   border-color: lightgrey;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 15px 15px 15px;
   width: auto;
   height: auto;
-  margin: 5% 25% 0% 25%;
+  margin: 0% 20% 0% 20%;
+}
+
+/* Main Text */
+.maintext {
+  font-size: 30px;
+  height: 233px;
+  width: 500px;
 }
 
 /* React to smaller screen size! */
 @media all and (max-width: 700px){
   .box{
-    display: flex;
     flex-direction: column;
+  }
+  .box3{
+    flex-direction: column;
+  }
+  .button{
+    font-size: 16px;
+  }
+  #test{
+    font-size: 20px;
+  }
+  .maintext{
+    font-size: 18px;
+    height: auto;
+    width: auto;
+  }
+
+  .oldbox{
+    padding: auto;
+    margin: auto;
   }
 }
 
@@ -219,7 +245,6 @@ li a:hover {
 }
 
 .entry-img{
-  /*border: 2px solid; */
   height: 260px;
   width: 260px;
 }
@@ -241,6 +266,25 @@ li a:hover {
   width: 260px;
 }
 
+.entry-icons{
+  height: 70px;
+  width: auto;
+}
+
+.entry-links{
+  /*
+  border:2px solid;
+  border-color: black;
+  */
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
 /* footer stuff */
 
 
@@ -253,4 +297,9 @@ li a:hover {
 .footer-item > a img {
   height: 25px;
   width: 25px;
+}
+
+#logo{
+  height: 40px;
+  width: 40px;
 }
