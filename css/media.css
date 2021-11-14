@@ -1,0 +1,54 @@
+.navbar-a:hover{
+  text-decoration: underline;
+}
+
+.main-button:hover{
+  background-color: #4796b8;
+}
+
+.logo{
+  height: 36px;
+  width: 36px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px){
+  .main-image{
+    display: none;
+  }
+  .about-box{
+    flex-direction: column-reverse;
+  }
+  .profile{
+    align-self: center;
+  }
+  .about-text{
+    max-width: 100%;
+  }
+  .project-box{
+    flex-direction: column;
+  }
+  .photo{
+    filter: none;
+  }
+
+  .navbar-desktop{
+    display: none;
+  }
+  .icons-desktop{
+    display: none;
+  }
+  .hamcontainer{
+    display: block;
+  }
+  .header-box{
+    justify-content: space-between;
+  }
+  .logo{
+    margin-left: 1em;
+  }
+
+  .quote-box{
+    text-align: center;
+  }
+}

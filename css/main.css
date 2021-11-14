@@ -1,0 +1,270 @@
+* {font-family: 'Anonymous Pro', monospace;}
+html, body{margin: 0; scroll-behavior: smooth;}
+
+.wrapper{
+  display: grid;
+  /* 3 Rows */
+  grid-template-rows: repeat(5, auto);
+  /* Two Columns */
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  /* header, main, focus, values */
+  grid-template-areas: "header"
+  "main" "projects" "about" "footer";
+  /* Spacing */
+  grid-gap: 12em;
+  /* Center */
+  overflow: hidden;
+}
+
+.header{
+  grid-area: header;
+}
+
+.main{
+  grid-area: main;
+}
+
+.projects{
+  grid-area: projects;
+}
+
+.about{
+  grid-area: about;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.header-back{
+  /*background-color: #63a9c0;*/
+}
+
+.footer-back{
+  background-color: #36728c;
+}
+
+/* Flex Container */
+.flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header-box{
+  justify-content: space-evenly;
+}
+.footer-box{
+  justify-content: space-evenly;
+}
+
+.main-box{
+  gap: 2em;
+}
+
+/* Navbar */
+.navbar-desktop{
+  width: auto;
+}
+.navbar-desktop > .navbar-ul{
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+.navbar-ul > .navbar-li{
+  float: left;
+  margin: auto;
+}
+.navbar-li > .navbar-a{
+  display: block;
+  color: #111;
+  font-size: 1em;
+  text-align: center;
+  padding: 14px 1em;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+}
+
+/* Footer Stuff */
+.footer-item{
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+  color: white;
+}
+
+.footer-item > a {
+  text-decoration: none;
+  color: white;
+}
+/* Main Stuff */
+.quote-box{
+}
+
+.code-snippet{
+  color: #88bbd1;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.quote{
+  font-weight: bold;
+  font-size: 2em;
+  max-width: 30ch;
+}
+
+.quote-two{
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.main-button{
+  border: 0;
+  background-color: #88bbd1;
+  color: #fdfefe;
+  font-size: 2em;
+  border-radius: 1em;
+  padding: 1em;
+  font-weight: bolder;
+  /* Add Box Shadow */
+  box-shadow: 0 0 25px -10px currentColor;
+}
+
+/* Projects */
+.project-background{
+  /*
+  background-image: url('../imgs/back1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  */
+}
+
+
+.project-box{
+  gap: 6em;
+}
+
+.project-item{
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.project-item:hover {
+  top: -1em;
+}
+
+.project-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.photo{
+  /*filter: sepia(var(--value, 100%));*/
+  filter: grayscale(1);
+}
+
+.photo:hover{
+  filter:none;
+}
+
+.project-head{
+  text-align: center;
+  font-size: 5ch;
+}
+
+/* About */
+.about-box{
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  gap: 6em;
+}
+
+.about-text{
+  max-width: 40%;
+  border: 2px lightgrey solid;
+  padding: 1em;
+  border-radius: 1.2em;
+  font-size: 1.1rem;
+}
+
+.profile{
+	align-self: flex-start;
+  text-align: center;
+}
+
+.profile-photo{
+  max-width: 40ch;
+  border-radius: 50%;
+}
+
+.profile-icon{
+  height: 2.2em;
+  width: 2.2em;
+}
+
+.special{
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+}
+
+.elp-background{
+  background-color: black;
+}
+
+/* Footer */
+.footer-icon{
+  height: 2.2em;
+  width: 2.2em;
+}
+
+/* Nav Bar */
+.hamcontainer{
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+  align-self: center;
+  margin-right: 1em;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger-entry{
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.hamburger-entry > a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: black;
+}
+
+/* 404 */
+.f0f{
+  flex-direction: column;
+  gap: 1em;
+}
+
+.f0f-button{
+  font-size: 2rem;
+}
