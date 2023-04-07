@@ -8,3 +8,4 @@ function showBar(){
     bar.style.display = "none";
   }
 }
+

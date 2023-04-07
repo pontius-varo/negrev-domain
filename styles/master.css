@@ -68,6 +68,23 @@ body, html {
     top: 5.2em;
 }
 
+.nav__sublist{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+.nav__sublist > a {
+    text-decoration: none;
+}
+
+
+.sublist__icon{
+    height: 31px;
+    width: 30px;
+    filter: invert(84%) sepia(83%) saturate(100%) hue-rotate(179deg) brightness(113%) contrast(106%);
+}
+
 /* Main & Article */ 
 
 .main {
@@ -214,12 +231,19 @@ body, html {
 }
 
 /* TODO: Make a catch-all figure*/
-.entry__figure {
+.entry__link {
     height: 180px;
     width: 180px;
     filter: blur(5px) grayscale(50%);
     z-index: 2;
     transition: all 1s ease;
+
+}
+
+
+.entry__figure {
+    height: 180px;
+    width: 180px;
 }
 
 /* Todo: Make a catch-all polygon*/
@@ -228,7 +252,7 @@ body, html {
     height: 180px;
     width: 180px;
     /* Temporary ? */
-    bottom: 27em;
+    bottom: 26.5em;
     transition: all 1s ease;
 }
 
@@ -237,17 +261,17 @@ body, html {
     color: var(--mainColor);
 }
 
-.entry__figure:hover{
+.entry__link:hover{
     filter: blur(0) grayscale(0);    
 }
 
-.entry__figure:hover .entry__polygon,
-.entry__figure:hover ~ .entry__polygon{
+.entry__link:hover .entry__polygon,
+.entry__link:hover ~ .entry__polygon{
     transform: rotate(45deg);
 }
 
-.entry__figure:hover .entry__title,
-.entry__figure:hover ~ .entry__title{
+.entry__link:hover .entry__title,
+.entry__link:hover ~ .entry__title{
     color: white; 
 }
 /**** MISC ****/
@@ -289,5 +313,8 @@ body, html {
         flex-direction: column;
         align-items: center;
         padding-left: 0px;
+    }
+    .nav__sublist{
+        margin: 0px;
     }
 }
