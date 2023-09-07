@@ -1,7 +1,14 @@
-:root { 
+
+/* 
+    Old Colors
     --mainColor: #474C51;
-    --whiteFlavor: #F1F6F8;
     --navBackgroundColor: #606060;
+*/
+
+:root { 
+    --mainColor: #2d5562;;
+    --whiteFlavor: #F1F6F8;
+    --navBackgroundColor: #777777;
 }
 
 @font-face {
@@ -127,9 +134,9 @@ body, html {
 }
 
 /******* ABOUT ******/ 
-.about__main {
+/* .about__main {
 
-}
+} */
 
 .about__article {
     padding: 1em;
@@ -139,10 +146,10 @@ body, html {
 .about__figure {
     height: 290px;
     width: 293px;
-    background-image: url("../imgs/myphoto.jpg");
+    background-image: url("../imgs/personalpic.png");
     margin: 0px;
-    background-position-x: 42em;
-    background-position-y: -28em;
+    background-position-x: 25em;
+    /* background-position-y: -28em; */
     margin-top: 4em;
     z-index: 2;
     filter: blur(5px) grayscale(30%);
